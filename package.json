@@ -1,0 +1,15 @@
+{
+  "name": "lab6-server-status",
+  "version": "1.0.0",
+  "description": "Лабораторная работа №6, вариант 20: API статуса сервера на Node.js + Express, PWA",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "author": "Фофана Бакау, гр. 932404",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

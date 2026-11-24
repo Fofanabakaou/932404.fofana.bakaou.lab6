@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Статус сервера</title>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#1e3a8a">
+  <link rel="icon" href="/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="/icons/icon-192.png">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Статус сервера</h1>
+    <nav>
+      <a href="/">Главная</a>
+      <a href="/about">О себе</a>
+    </nav>
+  </header>
+
+  <main>
+    <p id="net" class="badge">Онлайн</p>
+
+    <section class="cards">
+      <div class="card"><span>Время работы</span><strong id="uptime">—</strong></div>
+      <div class="card"><span>Память (RSS)</span><strong id="memory">—</strong></div>
+      <div class="card"><span>Ядер CPU</span><strong id="cpu">—</strong></div>
+    </section>
+
+    <p class="small">Обновлено: <span id="time">—</span></p>
+
+    <label><input type="checkbox" id="details"> Подробно (?details=true)</label>
+    <button id="refresh">Обновить</button>
+
+    <pre id="json"></pre>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
